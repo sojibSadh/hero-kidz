@@ -10,7 +10,7 @@ function Navbar() {
             <NavLink href={"/"}> Home </NavLink>
         </li>
         <li>
-            <NavLink href={"/Products"}> Products </NavLink>
+            <NavLink href={"/products"}> Products </NavLink>
         </li>
         <li>
             <NavLink href={"/blog"}> Blog </NavLink>

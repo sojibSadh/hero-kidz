@@ -1,10 +1,12 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { FaStar, FaShoppingCart } from "react-icons/fa";
 
 const ProductCard = ({ product }) => {
   const {
+    _id,
     title,
     image,
     price,
@@ -14,6 +16,7 @@ const ProductCard = ({ product }) => {
     sold,
   } = product;
 
+  // console.log(product);
   const finalPrice = discount
     ? price - Math.round((price * discount) / 100)
     : price;
@@ -76,6 +79,9 @@ const ProductCard = ({ product }) => {
             <FaShoppingCart />
             Add to Cart
           </button>
+          <Link href={`products/${_id}`}> <button className='btn btn-success'> View Details </button> </Link>
+          {/* <Link href={`/foods/${id}`} > View Details </Link> */}
+
         </div>
       </div>
     </div>
