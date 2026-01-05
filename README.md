@@ -19,7 +19,7 @@ Hero Kidzz is a small, single-vendor e-commerce web application designed for sel
 npm install react-icons mongodb bcryptjs
 ```
 
-## Colors
+## Color
 
 ```
  /* Brand */
